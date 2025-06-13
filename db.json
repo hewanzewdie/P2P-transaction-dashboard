@@ -1,0 +1,25 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "sName": "Alice",
+      "rName": "Bob",
+      "amount": 150,
+      "status": "completed"
+    },
+    {
+      "id": "2",
+      "sName": "Charlie",
+      "rName": "David",
+      "amount": 200,
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "sName": "John",
+      "rName": "Daniel",
+      "amount": 100,
+      "status": "failed"
+    }
+  ]
+}
