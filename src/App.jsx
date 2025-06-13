@@ -15,7 +15,6 @@ export default function App() {
     document.body.className = darkMode ? "bg-dark text-light" : "bg-light text-dark";
   }, [darkMode]);
 
-  // If you're not using the hardcoded transactions, remove this state
   const [transactions, setTransactions] = useState([]);
 
 

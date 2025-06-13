@@ -4,7 +4,6 @@ import { useParams, Link } from "react-router-dom";
 export default function TransactionDetail({ transactions, darkMode }) {
   const { id } = useParams();
 
-  // Find transaction by comparing string values of IDs
   const transaction = transactions.find((t) => String(t.id) === id);
 
   if (!transaction) {

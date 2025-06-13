@@ -17,12 +17,10 @@ export default function CreateTransaction({ setTransactions }) {
     }
 
     try {
-      // 1. Get current transactions to determine max ID
       const res = await axios.get("http://localhost:3001/transactions");
       const transactions = res.data;
       const maxId = transactions.length > 0 ? Math.max(...transactions.map(t => t.id)) : 0;
 
-      // 2. Create the new transaction with incremented ID
       const newTransaction = {
         id: maxId + 1,
         sName,
@@ -31,13 +29,10 @@ export default function CreateTransaction({ setTransactions }) {
         status,
       };
 
-      // 3. POST to server
       const postRes = await axios.post("http://localhost:3001/transactions", newTransaction);
 
-      // 4. Update state
       setTransactions((prev) => [...prev, postRes.data]);
 
-      // 5. Redirect
       navigate("/");
     } catch (err) {
       console.error("Failed to add transaction:", err);

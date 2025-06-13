@@ -1,10 +1,8 @@
-// Home.js
 import { Link } from "react-router-dom";
 import Transaction from "./Transaction";
 
 import { useEffect } from "react";
-import axios from "axios"; // or use fetch
-
+import axios from "axios"; 
 
 export default function Home({ filter, setFilter, transactions,setTransactions, darkMode }) {
 
