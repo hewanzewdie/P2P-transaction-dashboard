@@ -17,7 +17,7 @@ export default function Home({ filter, setFilter, transactions,setTransactions, 
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/transactions")
+      .get("https://684d73ee65ed087139162505.mockapi.io/api/transactions/Transaction")
       .then((res) => setTransactions(res.data))
       .catch((err) => console.error("Failed to fetch transactions:", err));
   }, []);

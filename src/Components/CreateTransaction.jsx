@@ -17,7 +17,7 @@ export default function CreateTransaction({ setTransactions }) {
     }
 
     try {
-      const res = await axios.get("http://localhost:3001/transactions");
+      const res = await axios.get("https://684d73ee65ed087139162505.mockapi.io/api/transactions/Transaction");
       const transactions = res.data;
       const maxId = transactions.length > 0 ? Math.max(...transactions.map(t => t.id)) : 0;
 
@@ -29,7 +29,7 @@ export default function CreateTransaction({ setTransactions }) {
         status,
       };
 
-      const postRes = await axios.post("http://localhost:3001/transactions", newTransaction);
+      const postRes = await axios.post("https://684d73ee65ed087139162505.mockapi.io/api/transactions/Transaction", newTransaction);
 
       setTransactions((prev) => [...prev, postRes.data]);
 
