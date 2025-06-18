@@ -1,12 +1,21 @@
-# React + Vite
+# P2P Transaction Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web-based dashboard for viewing and managing peer-to-peer (P2P) transactions. It fetches live data from a MockAPI endpoint and displays it in a responsive table with filter and dark mode support.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:**  
+[https://p2p-transaction-dashboard.netlify.app](https://p2p-transaction-dashboard.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View a list of P2P transactions
+- Filter transactions by status (e.g. Completed, Pending)
+- Toggle dark mode
+- Fully responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **React** – UI framework
+- **Bootstrap** – Styling and layout
+- **Axios** – For fetching data
+- **MockAPI** – Mock backend for transaction data
+- **Netlify** – Deployment platform
